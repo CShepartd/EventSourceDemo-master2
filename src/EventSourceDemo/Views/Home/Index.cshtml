@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<br />
+<div id="display">
+    
+</div>
+
+@section Scripts {
+    <script>
+        // setup the event source
+        function connectEventSource() {
+            console.log("Connecting to event source ...");
+
+            var eventSourceURL = "@Html.Raw(Url.Action("EventSource", "Home"))";
+
+            if (eventSourceURL !== "") {
+                if (!!window.EventSource) {
+                    var source = new EventSource(eventSourceURL);
+                    console.log("Event source configured.");
+                    // event source successfully connected
+                    source.addEventListener('Message', function (e) {
+                        dataObject = JSON.parse(e.data);
+                        var message = dataObject.Message;
+                        console.log("Message received: " + message);
+                        writeLine(message);
+                    }, false);
+
+                    source.addEventListener('open', function (e) {
+                        // Connection was opened.
+                        console.log("Event source connection opened.");
+                        writeLine("Event source opened");
+                    }, false);
+
+                    source.addEventListener('error', function (e) {
+                        if (e.readyState == EventSource.CLOSED) {
+                            // Connection was closed.
+                            console.log("Event source connection closed.");
+                            writeLine("Event source closed");
+                        }
+                    }, false);
+
+                } else {
+                    console.error("Your browser does not support event sources.");
+                    writeLine("Browser does not support event source SSE.");
+                }
+            }
+            else {
+                console.error("Event source URL was invalid");
+            }
+        }
+
+        function writeLine(message) {
+            $("#display").append(message + "<br />");
+        }
+
+        $(document).ready(function () {
+            console.log("Document is ready");
+            connectEventSource();
+        });
+
+    </script>
+    
+}

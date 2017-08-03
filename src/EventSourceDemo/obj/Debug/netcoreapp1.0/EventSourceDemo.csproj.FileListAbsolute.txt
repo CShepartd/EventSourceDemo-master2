@@ -1,0 +1,9 @@
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\bin\Debug\netcoreapp1.0\EventSourceDemo.deps.json
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\bin\Debug\netcoreapp1.0\EventSourceDemo.runtimeconfig.json
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\bin\Debug\netcoreapp1.0\EventSourceDemo.runtimeconfig.dev.json
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\bin\Debug\netcoreapp1.0\EventSourceDemo.dll
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\bin\Debug\netcoreapp1.0\EventSourceDemo.pdb
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\obj\Debug\netcoreapp1.0\EventSourceDemo.csprojResolveAssemblyReference.cache
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\obj\Debug\netcoreapp1.0\EventSourceDemo.AssemblyInfo.cs
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\obj\Debug\netcoreapp1.0\EventSourceDemo.dll
+C:\Users\user2\Desktop\EventSourceDemo-master\src\EventSourceDemo\obj\Debug\netcoreapp1.0\EventSourceDemo.pdb
